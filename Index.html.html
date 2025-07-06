@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Babes Bakes</title>
+  <link href="https://fonts.googleapis.com/css2?family=Bubblegum+Sans&display=swap" rel="stylesheet" />
+  <style>
+    :root {
+      --primary: #f8e1e7;
+      --accent: #d1a1b9;
+      --text: #333;
+      --white: #fff;
+    }
+
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: var(--white);
+      color: var(--text);
+    }
+
+    /* SINGLE header style block */
+    header {
+      background: url('title.jpg') no-repeat center center/cover;
+      padding: 2rem;
+      text-align: center;
+      color: white;
+      text-shadow: 1px 1px 6px rgba(0,0,0,0.7);
+      height: 250px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+
+    @keyframes bubbleTextAnimation {
+      0%, 100% {
+        color: #e64a87;
+        transform: scale(1);
+        text-shadow:
+          2px 2px 4px rgba(0,0,0,0.3),
+          0 0 10px rgba(230, 74, 135, 0.6);
+      }
+      50% {
+        color: #ff8fbc;
+        transform: scale(1.1);
+        text-shadow:
+          3px 3px 6px rgba(0,0,0,0.5),
+          0 0 20px rgba(255, 143, 188, 0.9);
+      }
+    }
+
+    header h1 {
+      font-family: 'Bubblegum Sans', cursive;
+      font-size: 5rem;
+      margin: 0;
+      animation: bubbleTextAnimation 3s ease-in-out infinite;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    header p {
+      margin-top: 0.5rem;
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #ffe6f0;
+      text-shadow: 1px 1px 4px rgba(0,0,0,0.5);
+    }
+
+    nav {
+      background: var(--accent);
+      display: flex;
+      justify-content: center;
+      gap: 2rem;
+      padding: 1rem;
+      font-family: 'Bubblegum Sans', cursive;
+    }
+
+    nav a {
+      text-decoration: none;
+      color: var(--white);
+      font-weight: bold;
+      font-size: 1.2rem;
+    }
+
+    .hero {
+      background: url('banner.jpg') no-repeat center center/cover;
+      height: 80vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--white);
+      text-shadow: 1px 1px 8px rgba(0,0,0,0.5);
+    }
+
+    .hero2 {
+      font-family: 'Bubblegum Sans', cursive;
+      font-size: 3rem;
+      background-color: rgba(0,0,0,0.4);
+      padding: 1rem 2rem;
+      border-radius: 8px;
+      margin: 0;
+    }
+
+    .cta {
+      text-align: center;
+      margin: 3rem 0;
+      font-family: 'Bubblegum Sans', cursive;
+    }
+
+    .cta a {
+      background-color: var(--accent);
+      color: var(--white);
+      padding: 1rem 2rem;
+      border-radius: 0px;
+      text-decoration: none;
+      font-weight: bold;
+      font-family: 'Bubblegum Sans', cursive;
+      font-size: 1.2rem;
+    }
+    .cta a:hover {
+      background-color: #bf7aa0;
+    }
+
+    footer {
+      margin-top: 4rem;
+      font-family: 'Bubblegum Sans', cursive;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Babes Bakes</h1>
+    <p>Beautifully Whipped. Elegantly Crafted.</p>
+  </header>
+
+  <nav>
+    <a href="index.html">Home</a>
+    <a href="shop.html">Shop</a>
+    <a href="custom.html">Custom Cakes</a>
+    <a href="gallery.html">Gallery</a>
+    <a href="contact.html">Contact</a>
+  </nav>
+
+  <section class="hero 2">
+    <h2>Buttercream Cakes Made to Impress</h2>
+  </section>
+
+  <section class="cta">
+    <h3>Ready to treat yourself or someone special?</h3>
+    <a href="shop.html">Shop Cakes</a>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Babes Bakes. All rights reserved.</p>
+  </footer>
+</body>
+</html>
